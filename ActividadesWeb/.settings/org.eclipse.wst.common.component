@@ -4,13 +4,13 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
-        <dependent-module archiveName="Servicios-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ActividadesServicios/ActividadesServicios">
+        <dependent-module archiveName="servicios-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ActividadesServicios/ActividadesServicios">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="Utilidades-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Utilidades/Utilidades">
+        <dependent-module archiveName="utilidades-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/Utilidades/Utilidades">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="Dominio-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ActividadesDominio/ActividadesDominio">
+        <dependent-module archiveName="dominio-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ActividadesDominio/ActividadesDominio">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="ActividadesWeb"/>

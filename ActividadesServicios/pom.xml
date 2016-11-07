@@ -1,8 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
+	
+	<distributionManagement>
+		<repository>
+			<id>internal</id>
+			<name>Internal Release Repository</name>
+			<url>http://localhost:8081/repository/internal/</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshot Repository</name>
+			<url>http://localhost:8081/repository/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+	
 	<groupId>com.udea.servicios</groupId>
-	<artifactId>Servicios</artifactId>
+	<artifactId>servicios</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
 		<!-- Dependencias spring -->
@@ -35,16 +49,22 @@
 			<artifactId>spring-orm</artifactId>
 			<version>4.2.4.RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.activemq</groupId>
+			<artifactId>activemq-broker</artifactId>
+			<version>5.14.0</version>
+			<scope>release</scope>
+		</dependency>
 		
 		<!-- Dependencia a otros proyectos -->
 		<dependency>
 			<groupId>com.ctrlz.utilidades</groupId>
-			<artifactId>Utilidades</artifactId>
+			<artifactId>utilidades</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>com.udea.dominio</groupId>
-			<artifactId>Dominio</artifactId>
+			<artifactId>dominio</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		
@@ -90,6 +110,6 @@
 			<version>3.3.1</version>
 		</dependency>
 	</dependencies>
-	<name>ActividadesServicios</name>
+	<name>servicios</name>
 	<description>Servicios web de registro de actividades</description>
 </project>
